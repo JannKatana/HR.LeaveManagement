@@ -9,10 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9484ed6a-10b2-4331-9452-c8250da67cf2" name="Changes" comment="">
+    <list default="true" id="9484ed6a-10b2-4331-9452-c8250da67cf2" name="Changes" comment="- Added CsvHelper package&#10;- Added simple controller for validating csv contents&#10;- Added mock csv">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HR.LeaveManagement/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HR.LeaveManagement/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/HR.LeaveManagement.Infrastructure/HR.LeaveManagement.Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/HR.LeaveManagement.Infrastructure/HR.LeaveManagement.Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/HR.LeaveManagement.Infrastructure/InfrastructureServiceRegistration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/HR.LeaveManagement.Infrastructure/InfrastructureServiceRegistration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/HR.LeaveManagement.API/Controllers/CsvReaderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/HR.LeaveManagement.API/Controllers/CsvReaderController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/HR.LeaveManagement.Application/Features/Csv/Users/Queries/UsersCsvValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/HR.LeaveManagement.Application/Features/Csv/Users/Queries/UsersCsvValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/HR.LeaveManagement.Application/Features/Csv/Users/Queries/ValidateUserCsvQueryHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/HR.LeaveManagement.Application/Features/Csv/Users/Queries/ValidateUserCsvQueryHandler.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +30,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3520bf5c151bbc5aed94ba6abea697eaaee2b96fe96341613fef02be1cc54/ValidationFailure.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9b282b4fe8c3da0e0e16c9951a932d911f7ba42d46571d9d31ec9ac21268d2d/AbstractValidator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projects/HR.LeaveManagement/src/API/HR.LeaveManagement.API/Controllers/CsvReaderController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/API/HR.LeaveManagement.API/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/API/HR.LeaveManagement.API/appsettings.Development.json" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/API/HR.LeaveManagement.API/appsettings.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projects/HR.LeaveManagement/src/Core/HR.LeaveManagement.Application/Features/Csv/Users/Queries/UsersCsvValidator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Core/HR.LeaveManagement.Domain/Common/BaseEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Core/HR.LeaveManagement.Domain/LeaveAllocation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Core/HR.LeaveManagement.Domain/LeaveRequest.cs" root0="FORCE_HIGHLIGHTING" />
@@ -130,7 +133,7 @@
       <workItem from="1688472032124" duration="9798000" />
       <workItem from="1688489618282" duration="3994000" />
       <workItem from="1688520165572" duration="16791000" />
-      <workItem from="1688566253305" duration="6080000" />
+      <workItem from="1688566253305" duration="6982000" />
     </task>
     <task id="LOCAL-00001" summary="Added gitignore file">
       <option name="closed" value="true" />
@@ -140,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688546906374</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- Added CsvHelper package&#10;- Added simple controller for validating csv contents&#10;- Added mock csv">
+      <option name="closed" value="true" />
+      <created>1688572528837</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688572528837</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +172,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Added gitignore file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added gitignore file" />
+    <MESSAGE value="- Added CsvHelper package&#10;- Added simple controller for validating csv contents&#10;- Added mock csv" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added CsvHelper package&#10;- Added simple controller for validating csv contents&#10;- Added mock csv" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

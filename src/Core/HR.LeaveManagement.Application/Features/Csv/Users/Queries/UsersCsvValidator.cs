@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using HR.LeaveManagement.Application.Models.Csv;
 
-namespace HR.LeaveManagement.Application.Features.Csv.ReadUsers.Queries;
+namespace HR.LeaveManagement.Application.Features.Csv.Users.Queries;
 
 public class UsersCsvValidator : AbstractValidator<UserCsv>
 {
@@ -11,7 +11,9 @@ public class UsersCsvValidator : AbstractValidator<UserCsv>
             .NotEmpty().WithMessage("{PropertyName} is required")
             .NotNull()
             .MaximumLength(70).WithMessage("{PropertyName} must be fewer that 70 characters")
-            .Matches("^[A-Za-z][A-Za-z0-9_]{7,29}$").WithMessage("{PropertyName} must be a valid username");
+            .Matches(@"^(?:\w+|\w+([+\.-]?\w+)*@\w+([\.-]?\w+)*(\.[a-zA-z]{2,4})+)$")
+            .WithMessage("{PropertyName} must be a valid username");
+
 
         RuleFor(p => p.Email)
             .NotEmpty().WithMessage("{PropertyName} is required")
