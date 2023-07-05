@@ -1,7 +1,8 @@
-﻿using System.Reflection;
+﻿using HR.LeaveManagement.Application.Contracts.Csv;
 using HR.LeaveManagement.Application.Contracts.Email;
 using HR.LeaveManagement.Application.Contracts.Logging;
 using HR.LeaveManagement.Application.Models.Email;
+using HR.LeaveManagement.Infrastructure.CsvService;
 using HR.LeaveManagement.Infrastructure.EmailService;
 using HR.LeaveManagement.Infrastructure.Logging;
 using Microsoft.Extensions.Configuration;
@@ -16,6 +17,7 @@ public static class InfrastructureServiceRegistration
         services.Configure<EmailSettings>(configuration.GetSection("EmailSettings"));
         services.AddTransient<IEmailSender, EmailSender>();
         services.AddScoped(typeof(IAppLogger<>), typeof(LoggerAdapter<>));
+        services.AddScoped<ICsvReader, CsvReader>();
         
         return services;
     }
