@@ -32,11 +32,23 @@ public class UpdateLeaveTypeCommandHandler : IRequestHandler<UpdateLeaveTypeComm
             throw new BadRequestException("Invalid Leave Type", validationResult);
         }
 
+        /** Not recommended approach */
         // Convert to domain entity object
-        var leaveTypeToUpdate = _mapper.Map<Domain.LeaveType>(request);
+        // var leaveTypeToUpdate = _mapper.Map<Domain.LeaveType>(request);
 
         // Add to database
-        await _leaveTypeRepository.UpdateAsync(leaveTypeToUpdate);
+        // await _leaveTypeRepository.UpdateAsync(leaveTypeToUpdate); 
+
+
+        var leaveType = await _leaveTypeRepository.GetByIdAsync(request.Id);
+
+        if (leaveType is null)
+        {
+            throw new NotFoundException(nameof(leaveType), request.Id);
+        }
+
+        _mapper.Map(request, leaveType);
+        await _leaveTypeRepository.UpdateAsync(leaveType);
 
         // Return record id
         return Unit.Value;

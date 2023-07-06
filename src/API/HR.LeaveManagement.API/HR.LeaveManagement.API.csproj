@@ -22,8 +22,4 @@
       <ProjectReference Include="..\..\Infrastructure\HR.LeaveManagement.Persistence\HR.LeaveManagement.Persistence.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Controllers\" />
-    </ItemGroup>
-
 </Project>
