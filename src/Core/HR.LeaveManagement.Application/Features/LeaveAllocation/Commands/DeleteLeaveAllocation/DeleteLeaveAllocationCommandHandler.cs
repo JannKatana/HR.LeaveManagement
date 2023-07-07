@@ -7,12 +7,10 @@ namespace HR.LeaveManagement.Application.Features.LeaveAllocation.Commands.Delet
 
 public class DeleteLeaveAllocationCommandHandler : IRequestHandler<DeleteLeaveAllocationCommand, Unit>
 {
-    private readonly IMapper _mapper;
     private readonly ILeaveAllocationRepository _leaveAllocationRepository;
 
-    public DeleteLeaveAllocationCommandHandler(IMapper mapper, ILeaveAllocationRepository leaveAllocationRepository)
+    public DeleteLeaveAllocationCommandHandler(ILeaveAllocationRepository leaveAllocationRepository)
     {
-        _mapper = mapper;
         _leaveAllocationRepository = leaveAllocationRepository;
     }
 

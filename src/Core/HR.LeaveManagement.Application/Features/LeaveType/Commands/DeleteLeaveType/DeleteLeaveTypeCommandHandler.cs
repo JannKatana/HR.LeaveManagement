@@ -1,5 +1,4 @@
-﻿using AutoMapper;
-using HR.LeaveManagement.Application.Contracts.Logging;
+﻿using HR.LeaveManagement.Application.Contracts.Logging;
 using MediatR;
 using HR.LeaveManagement.Application.Contracts.Persistence;
 using HR.LeaveManagement.Application.Exceptions;
@@ -11,7 +10,7 @@ public class DeleteLeaveTypeCommandHandler : IRequestHandler<DeleteLeaveTypeComm
     private readonly ILeaveTypeRepository _leaveTypeRepository;
     private readonly IAppLogger<DeleteLeaveTypeCommandHandler> _logger;
 
-    public DeleteLeaveTypeCommandHandler(IMapper mapper, ILeaveTypeRepository leaveTypeRepository,
+    public DeleteLeaveTypeCommandHandler(ILeaveTypeRepository leaveTypeRepository,
         IAppLogger<DeleteLeaveTypeCommandHandler> logger)
     {
         _leaveTypeRepository = leaveTypeRepository;
@@ -22,7 +21,10 @@ public class DeleteLeaveTypeCommandHandler : IRequestHandler<DeleteLeaveTypeComm
     {
         // Retrieve domain entity object
         var leaveTypeToDelete = await _leaveTypeRepository.GetByIdAsync(request.Id);
-
+        
+        if (leaveTypeToDelete is null)
+            throw new NotFoundException(nameof(leaveTypeToDelete), request.Id);
+        
         // Validate that record exists
         var validator = new DeleteLeaveTypeCommandValidator(_leaveTypeRepository);
         var validationResult = await validator.ValidateAsync(request);
