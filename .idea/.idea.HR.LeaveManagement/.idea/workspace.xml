@@ -9,9 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9484ed6a-10b2-4331-9452-c8250da67cf2" name="Changes" comment="">
+    <list default="true" id="9484ed6a-10b2-4331-9452-c8250da67cf2" name="Changes" comment="Setup Testing Projects">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HR.LeaveManagement/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HR.LeaveManagement/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HR.LeaveManagement.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HR.LeaveManagement.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/HR.LeaveManagement.Application.UnitTests/HR.LeaveManagement.Application.UnitTests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/HR.LeaveManagement.Application.UnitTests/HR.LeaveManagement.Application.UnitTests.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,6 +127,7 @@
       <workItem from="1688601708548" duration="10676000" />
       <workItem from="1688682766966" duration="8967000" />
       <workItem from="1689067374640" duration="1585000" />
+      <workItem from="1689069004509" duration="745000" />
     </task>
     <task id="LOCAL-00001" summary="Added gitignore file">
       <option name="closed" value="true" />
@@ -168,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689068657447</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Setup Testing Projects">
+      <option name="closed" value="true" />
+      <created>1689069176873</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689069176873</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +202,8 @@
     <MESSAGE value="Added Leave Request Features" />
     <MESSAGE value="Added missing files from previous commit." />
     <MESSAGE value="Added Global Error Handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Global Error Handling" />
+    <MESSAGE value="Setup Testing Projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Setup Testing Projects" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
