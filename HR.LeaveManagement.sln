@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BCBDDA14-0C26-46DF-AB11-5F321DD7D1A7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9249EE6E-D8EC-4F2B-8AC8-EBEF97BDBDD6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9249EE6E-D8EC-4F2B-8AC8-EBEF97BDBDD6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{651455E4-6998-4AD7-9EBA-4F7FB7672646}"
 EndProject
@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Infrastr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.API", "src\API\HR.LeaveManagement.API\HR.LeaveManagement.API.csproj", "{FF50CF8C-C1DE-4C4D-9EFD-3775934139CF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HR.LeaveManagement.Application.UnitTests", "test\HR.LeaveManagement.Application.UnitTests\HR.LeaveManagement.Application.UnitTests.csproj", "{A13535DB-FFB1-43B6-9B1E-9C42C404646E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,7 @@ Global
 		{C8157D7F-DAF6-4AAA-8E68-9F582684AAAB} = {E41B7957-C780-4E8F-84F6-E04B361B17C9}
 		{9B539C37-462A-4DA1-BEE5-634908FE1E04} = {E41B7957-C780-4E8F-84F6-E04B361B17C9}
 		{FF50CF8C-C1DE-4C4D-9EFD-3775934139CF} = {651455E4-6998-4AD7-9EBA-4F7FB7672646}
+		{A13535DB-FFB1-43B6-9B1E-9C42C404646E} = {9249EE6E-D8EC-4F2B-8AC8-EBEF97BDBDD6}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7A7ED6C3-F51F-4E7F-AF35-9B905480B450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -59,5 +62,9 @@ Global
 		{FF50CF8C-C1DE-4C4D-9EFD-3775934139CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF50CF8C-C1DE-4C4D-9EFD-3775934139CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF50CF8C-C1DE-4C4D-9EFD-3775934139CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A13535DB-FFB1-43B6-9B1E-9C42C404646E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A13535DB-FFB1-43B6-9B1E-9C42C404646E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A13535DB-FFB1-43B6-9B1E-9C42C404646E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A13535DB-FFB1-43B6-9B1E-9C42C404646E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

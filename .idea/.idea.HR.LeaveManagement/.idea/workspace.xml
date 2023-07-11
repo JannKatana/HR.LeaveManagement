@@ -11,7 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9484ed6a-10b2-4331-9452-c8250da67cf2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HR.LeaveManagement/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HR.LeaveManagement/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Core/HR.LeaveManagement.Application/Exceptions/BadRequestException.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/HR.LeaveManagement.Application/Exceptions/BadRequestException.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HR.LeaveManagement.sln" beforeDir="false" afterPath="$PROJECT_DIR$/HR.LeaveManagement.sln" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +23,7 @@
     <setting file="file://$PROJECT_DIR$/src/API/HR.LeaveManagement.API/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/API/HR.LeaveManagement.API/appsettings.Development.json" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/API/HR.LeaveManagement.API/appsettings.json" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://D:/Projects/HR.LeaveManagement/src/Core/HR.LeaveManagement.Application/Features/LeaveAllocation/Commands/DeleteLeaveAllocation/DeleteLeaveAllocationCommandHandler.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://D:/Projects/HR.LeaveManagement/src/Core/HR.LeaveManagement.Application/Exceptions/BadRequestException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Core/HR.LeaveManagement.Domain/Common/BaseEntity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Core/HR.LeaveManagement.Domain/LeaveAllocation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Core/HR.LeaveManagement.Domain/LeaveRequest.cs" root0="FORCE_HIGHLIGHTING" />
@@ -126,7 +126,7 @@
       <workItem from="1688520165572" duration="16791000" />
       <workItem from="1688601708548" duration="10676000" />
       <workItem from="1688682766966" duration="8967000" />
-      <workItem from="1689067374640" duration="1040000" />
+      <workItem from="1689067374640" duration="1585000" />
     </task>
     <task id="LOCAL-00001" summary="Added gitignore file">
       <option name="closed" value="true" />
@@ -160,7 +160,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688727726111</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added Global Error Handling">
+      <option name="closed" value="true" />
+      <created>1689068657447</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689068657447</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +192,8 @@
     <MESSAGE value="Added Leave Allocation feature." />
     <MESSAGE value="Added Leave Request Features" />
     <MESSAGE value="Added missing files from previous commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added missing files from previous commit." />
+    <MESSAGE value="Added Global Error Handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Global Error Handling" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
